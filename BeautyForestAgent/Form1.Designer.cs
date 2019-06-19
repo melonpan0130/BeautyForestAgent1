@@ -51,6 +51,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label1
             // 
@@ -74,6 +75,7 @@
             // 
             this.ntiTray.Icon = ((System.Drawing.Icon)(resources.GetObject("ntiTray.Icon")));
             this.ntiTray.Text = "트레이 아이콘";
+            this.ntiTray.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NtiTray_MouseDoubleClick);
             // 
             // cmsMenu
             // 
@@ -86,14 +88,16 @@
             // 폼보이ㅣㄱToolStripMenuItem
             // 
             this.폼보이ㅣㄱToolStripMenuItem.Name = "폼보이ㅣㄱToolStripMenuItem";
-            this.폼보이ㅣㄱToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.폼보이ㅣㄱToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.폼보이ㅣㄱToolStripMenuItem.Text = "폼 보이기";
+            this.폼보이ㅣㄱToolStripMenuItem.Click += new System.EventHandler(this.폼보이기ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
             this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종료ToolStripMenuItem.Text = "종료";
+            this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -110,6 +114,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Beauty Forest Agent v0.1 by 3117 정은주";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cmsMenu.ResumeLayout(false);
             this.ResumeLayout(false);
